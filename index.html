@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+
+        <div class="main">
+            <div class="main1">
+                <!-- <p id="textarea">HI</p> -->
+
+                 <div class="text">
+                    <input type="text" id="text-area"> 
+                    
+    
+                </div>
+            </div>
+            <div class="content">
+
+                <div class="cell-1">
+                    <div class="cell1" onclick="dis('(')">
+                        <h3 >(</h3>
+                    </div>
+                    <div class="cell1"  onclick="dis(')')">
+                        <h3>)</h3>
+                    </div>
+                    <div class="cell1"  onclick="dis('%')">
+                        <h3>%</h3>
+                    </div>
+                    <div class="cell1"  onclick="erase()">
+                        <h3>C</h3>
+                    </div>
+
+                </div>
+                <div class="cell-1">
+                    <div class="cell" id="cell1"  onclick="dis('7')" >
+                        <h3>7</h3>
+                    </div>
+                    <div class="cell" id="cell1"  onclick="dis('8')">
+                        <h3>8</h3>
+                    </div>
+                    <div class="cell" id="cell1"  onclick="dis('9')">
+                        <h3>9</h3>
+                    </div>
+                    <div class="cell1"  onclick="dis('/')">
+                        <h2 id="divide">÷</h2>
+                    </div>
+
+                </div>
+                <div class="cell-1">
+                    <div class="cell" id="cell1" onclick="dis('4')" >
+                        <h3>4</h3>
+                    </div>
+                    <div class="cell" id="cell1" onclick="dis('5')">
+                        <h3>5</h3>
+                    </div>
+                    <div class="cell" id="cell1" onclick="dis('6')">
+                        <h3>6</h3>
+                    </div>
+                    <div class="cell1" onclick="dis('*')">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+                <div class="cell-1">
+                    <div class="cell" id="cell1"  onclick="dis('1')">
+                        <h3>1</h3>
+                    </div>
+                    <div class="cell" id="cell1" onclick="dis('2')">
+                        <h3>2</h3>
+                    </div>
+                    <div class="cell" id="cell1" onclick="dis('3')">
+                        <h3>3</h3>
+                    </div>
+                    <div class="cell1" onclick="dis('+')">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+                <div class="cell-1">
+                    <div class="cell" id="cell1" onclick="dis('0')">
+                        <h3>0</h3>
+                    </div>
+                    <div class="cell" id="cell1" onclick="dis('.')">
+                        <h2>.</h2>
+                    </div>
+                    <div class="cell1" id="equal" onclick="solve()">
+                        <h2>=</h2>
+                    </div>
+                    <div class="cell1" onclick="dis('-')">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="calc.js"></script>
+</body>
+</html>
